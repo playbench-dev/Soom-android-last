@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="668"
+    android:background="@color/white"
+    tools:context=".Login.Activitys.NewWorkThroughActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="668"
+        android:orientation="vertical"
+        android:weightSum="617">
+
+        <androidx.viewpager.widget.ViewPager
+            android:overScrollMode="never"
+            android:id="@+id/view_pager_activity_work_through"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="462"></androidx.viewpager.widget.ViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@android:color/white"
+            android:layout_weight="12"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_work_through_indicator_01"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/selected_dot_work_through"/>
+
+            <LinearLayout
+                android:layout_width="4dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/img_work_through_indicator_02"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/default_dot_work_through"/>
+
+            <LinearLayout
+                android:layout_width="4dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/img_work_through_indicator_03"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/default_dot_work_through"/>
+        </LinearLayout>
+<!--        <com.google.android.material.tabs.TabLayout-->
+<!--            android:focusable="false"-->
+<!--            android:id="@+id/tab_layout_activity_work_through"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="6dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginBottom="120dp"-->
+<!--            app:tabBackground="@drawable/tab_selector_work_through"-->
+<!--            app:tabGravity="center"-->
+<!--            app:tabPaddingStart="10dp"-->
+<!--            app:tabPaddingEnd="10dp"-->
+<!--            app:tabIndicatorHeight="0dp"></com.google.android.material.tabs.TabLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="29"/>
+
+        <Button
+            android:id="@+id/btn_work_through_start"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custom_primary_50dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="다음"
+            android:textSize="16dp"
+            android:textColor="@color/white"></Button>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="17"/>
+
+        <TextView
+            android:id="@+id/txt_new_work_through_skip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="건너뛰기"
+            android:gravity="center"
+            android:textSize="13dp"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:includeFontPadding="false"
+            android:textColor="#a0a0a0"/>
+    </LinearLayout>
+
+</LinearLayout>

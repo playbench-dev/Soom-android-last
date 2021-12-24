@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg_category_community">
+
+    <TextView
+        android:id="@+id/txt_community_category_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="게시판"
+        android:textColor="@color/color343434"
+        android:textSize="20dp"
+        android:fontFamily="@font/notosanscjkkr_bold"
+        android:includeFontPadding="false"/>
+
+    <LinearLayout
+        android:id="@+id/rdo_category_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lin_category_select_01"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txt_community_category_title_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="title"
+                    android:textColor="#484848"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/notosanscjkkr_bold"
+                    android:includeFontPadding="false"/>
+
+                <TextView
+                    android:id="@+id/txt_community_category_contents_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="기록 공유, 일상, 궁금한 질문 등\n나의 이야기를 자유롭게 나누는 게시판"
+                    android:textColor="#484848"
+                    android:textSize="13dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"/>
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/rdo_community_category_01"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/community_check_box"
+                android:button="@null"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#D1D1D1"/>
+
+        <LinearLayout
+            android:id="@+id/lin_category_select_02"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txt_community_category_title_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="title"
+                    android:textColor="#484848"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/notosanscjkkr_bold"
+                    android:includeFontPadding="false"/>
+
+                <TextView
+                    android:id="@+id/txt_community_category_contents_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="진료, 약 복용, 백신접종, 병원 등\n나의 후기를 숨메이트와 공유하는 게시판"
+                    android:textColor="#484848"
+                    android:textSize="13dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"/>
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/rdo_community_category_02"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/custom_check_box_1"
+                android:button="@null"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

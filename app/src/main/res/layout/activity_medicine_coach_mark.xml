@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Home.Activitys.CoachMark.MedicineCoachMarkActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_medicine_coach_mark_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_coach_mark_medicine_1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ededed"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+                <Button
+                    android:id="@+id/btn_medicine_coach_mark_never"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="다시 보지않기"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:background="@android:color/transparent"/>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:background="@color/ededed"/>
+
+                <Button
+                    android:id="@+id/btn_medicine_coach_mark_finish"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="다음"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:background="@android:color/transparent"
+                    style="?android:attr/borderlessButtonStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

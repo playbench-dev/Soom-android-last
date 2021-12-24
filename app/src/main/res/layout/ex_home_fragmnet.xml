@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="616">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:id="@+id/day_count_fragment_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="22dp"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:includeFontPadding="false"
+            android:gravity="center_vertical"
+            android:text="어서오세요!"
+            android:textColor="#000000"
+            android:textSize="18dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical">
+
+            <ImageView
+                android:id="@+id/filter_fragment_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_filter_off"></ImageView>
+
+            <ImageView
+                android:id="@+id/calendar_fragment_home"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_calendar"></ImageView>
+
+            <ImageView
+                android:id="@+id/alarm_fragment_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="24dp"
+                android:src="@drawable/ic_alarm_on"></ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/home_coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            app:elevation="0dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_behavior=".Home.HomeItem.FixedAppBarLayoutBehavior">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_tool_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.kmw.soom2.Home.HomeItem.CustomViewPager
+                        android:id="@+id/view_pager_fragment_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never">
+
+                    </com.kmw.soom2.Home.HomeItem.CustomViewPager>
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tab_layout_fragment_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginBottom="0dp"
+                        android:focusable="false"
+                        app:tabBackground="@drawable/tab_selector"
+                        app:tabGravity="center"
+                        app:tabIndicatorHeight="0dp"
+                        app:tabPaddingBottom="9dp"
+                        app:tabPaddingEnd="6dp"
+                        app:tabPaddingStart="6dp"></com.google.android.material.tabs.TabLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginRight="27dp"
+                        android:background="@drawable/shape_btn_primary_bg"
+                        android:backgroundTint="#38000000"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/txt_home_banner_pager_cnt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/notosanscjkkr_medium"
+                            android:includeFontPadding="false"/>
+                        <TextView
+                            android:id="@+id/txt_home_banner_pager_total_cnt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:textColor="#b3ffffff"
+                            android:fontFamily="@font/notosanscjkkr_medium"
+                            android:includeFontPadding="false"/>
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="9dp"
+                    android:gravity="center|bottom"
+                    android:orientation="horizontal"></LinearLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/home_tool_bar"
+                android:layout_width="match_parent"
+                android:layout_height="104.5dp"
+                android:background="#acacac"
+                app:contentInsetStart="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="290">
+
+                    <LinearLayout
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:id="@+id/lin_home_measure"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="58"
+                        android:orientation="vertical"
+                        android:focusable="true"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/measure"
+                            android:focusable="false"
+                            android:adjustViewBounds="true"
+                            android:id="@+id/measure_fragment_home"></ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="검사"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/notosanscjkkr_bold"
+                            android:textSize="12dp"
+                            android:includeFontPadding="false"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="9dp"
+                        android:layout_height="match_parent"></LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_home_breath"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="58"
+                        android:orientation="vertical"
+                        android:focusable="true"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/lungs"
+                            android:focusable="false"
+                            android:adjustViewBounds="true"></ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="폐기능"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/notosanscjkkr_bold"
+                            android:textSize="12dp"
+                            android:includeFontPadding="false"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="9dp"
+                        android:layout_height="match_parent"></LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_home_medicine"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="58"
+                        android:orientation="vertical"
+                        android:focusable="true"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/drug"
+                            android:focusable="false"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/notosanscjkkr_bold"
+                            android:includeFontPadding="false"
+                            android:text="약"
+                            android:textSize="12dp"
+                            android:textColor="#000000"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="9dp"
+                        android:layout_height="match_parent"></LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_home_symptom"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="58"
+                        android:orientation="vertical"
+                        android:focusable="true"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/symptom"
+                            android:focusable="false"
+                            android:adjustViewBounds="true"></ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="증상"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/notosanscjkkr_bold"
+                            android:textSize="12dp"
+                            android:includeFontPadding="false"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="9dp"
+                        android:layout_height="match_parent"></LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_home_memo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="58"
+                        android:orientation="vertical"
+                        android:focusable="true"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/memo"
+                            android:focusable="false"
+                            android:adjustViewBounds="true"></ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="메모"
+                            android:textColor="#000000"
+                            android:fontFamily="@font/notosanscjkkr_bold"
+                            android:textSize="12dp"
+                            android:includeFontPadding="false"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:orientation="vertical"
+            android:background="#fafafa">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp">
+
+                <LinearLayout
+                    android:id="@+id/lin_ex_home_guest"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/shape_radius_write_bg"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="혹시 지금 둘러보는 중이시라면? 👀"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:includeFontPadding="false"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2021.04.21"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="14dp"/>
+
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_ex"
+                        android:layout_marginLeft="8dp"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_fragment_home"
+                    android:overScrollMode="never"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fafafa"></androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

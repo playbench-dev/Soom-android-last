@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="668"
+    android:background="@color/white"
+    tools:context=".Login.Activitys.NewAnotherLoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="668">
+
+        <ImageView
+            android:id="@+id/img_new_another_login_back"
+            android:layout_width="43dp"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            android:src="@drawable/ic_back"
+            android:paddingLeft="19dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="35.2"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="112.7"
+            android:src="@drawable/img_ex_another_login_text"
+            android:scaleType="fitStart"
+            android:layout_marginLeft="37.7dp"
+            android:layout_marginRight="54.5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="24.8"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="287"
+            android:src="@drawable/img_ex_another_login_bg"
+            android:scaleType="fitStart"
+            android:layout_marginLeft="54dp"
+            android:layout_marginRight="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="23"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="47"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_new_another_login_kakao_login"
+                android:layout_width="47dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_kakao_ring"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+                    android:id="@+id/btn_new_another_login_naver_login"
+                    android:layout_width="15sp"
+                    android:layout_height="15sp"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"></com.nhn.android.naverlogin.ui.view.OAuthLoginButton>
+
+                <ImageView
+                    android:id="@+id/img_new_another_login_naver_login"
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_naver_ring"
+                    android:layout_marginLeft="16dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="23"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_new_another_login_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="이메일 회원가입"
+                android:textColor="#363636"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    |    "
+                android:textSize="16dp"
+                android:textColor="#363636"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+            <TextView
+                android:id="@+id/txt_new_another_login_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="이메일 로그인"
+                android:textColor="#363636"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

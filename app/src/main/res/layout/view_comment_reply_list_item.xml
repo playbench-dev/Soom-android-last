@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/lin_comment_reply_list_item">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0.5dp"-->
+<!--        android:background="#E7E7E7"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:weightSum="100"
+        android:paddingLeft="55dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_comment_reply_list_item_profile"
+            android:layout_width="27dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_user_profile"/>
+
+        <LinearLayout
+            android:layout_width="8dp"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_comment_reply_list_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아이디"
+                android:textSize="14dp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_comment_reply_list_item_more"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_more"
+            android:tint="#8D8D8D"/>
+
+        <LinearLayout
+            android:layout_width="12dp"
+            android:layout_height="match_parent"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="55dp">
+
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"></LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_comment_reply_list_item_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingRight="36dp"
+            android:autoLink="web"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="5dp"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:includeFontPadding="false"
+            android:textSize="16dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="55dp">
+
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"></LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_comment_reply_list_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#949494"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:includeFontPadding="false"
+            android:textSize="12dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/txt_comment_reply_list_item_recomment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="#949494"
+            android:text="답글달기"
+            android:layout_marginRight="36dp"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:includeFontPadding="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_comment_reply_list_item_space"
+        android:layout_width="match_parent"
+        android:layout_height="10.8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:id="@+id/lin_comment_reply_list_item_parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"/>
+    </LinearLayout>
+
+
+</LinearLayout>

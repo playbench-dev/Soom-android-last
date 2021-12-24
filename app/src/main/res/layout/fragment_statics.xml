@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="616"
+    tools:context="com.kmw.soom2.Reports.StaticsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:includeFontPadding="false"
+            android:text="보고서"
+            android:textColor="#000000"
+            android:textSize="22dp"></TextView>
+
+        <ImageView
+            android:id="@+id/img_statics_alarm"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_alarm_off"
+            android:visibility="gone"
+            android:layout_marginRight="24dp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lin_statics_medicine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"/>
+                    
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_static_medicine"/>
+
+                    <LinearLayout
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="약"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/notosanscjkkr_bold"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/black"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="깜빡한 약은 없나요?"
+                            android:textSize="14dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/notosanscjkkr_medium_regular"
+                            android:includeFontPadding="false"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_home_guide_arrow"
+                            android:layout_marginRight="20dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/ededed"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lin_statics_symptom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_static_symptom"/>
+
+                    <LinearLayout
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="증상"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/notosanscjkkr_bold"
+                            android:includeFontPadding="false"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="증상추이와 관리방법을 확인해보세요"
+                            android:textSize="14dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/notosanscjkkr_medium_regular"
+                            android:includeFontPadding="false"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_home_guide_arrow"
+                            android:layout_marginRight="20dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/ededed"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lin_statics_breath"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_static_breath"/>
+
+                    <LinearLayout
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="폐기능"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/notosanscjkkr_bold"
+                            android:includeFontPadding="false"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="폐기능 수치를 분석할 수 있어요."
+                            android:textSize="14dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/notosanscjkkr_medium_regular"
+                            android:includeFontPadding="false"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_home_guide_arrow"
+                            android:layout_marginRight="20dp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/ededed"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lin_statics_asthma"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_static_act"/>
+
+                    <LinearLayout
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="천식조절검사(ACT)"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/notosanscjkkr_bold"
+                            android:includeFontPadding="false"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="천식관리 결과를 확인해보세요."
+                            android:textSize="14dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/notosanscjkkr_medium_regular"
+                            android:includeFontPadding="false"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_home_guide_arrow"
+                            android:layout_marginRight="20dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/ededed"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lin_statics_static"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/statics"/>
+
+                    <LinearLayout
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="종합보고서"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/notosanscjkkr_bold"
+                            android:includeFontPadding="false"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="병원에 관리 진행 상황을 공유하세요."
+                            android:textSize="14dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/notosanscjkkr_medium_regular"
+                            android:includeFontPadding="false"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_home_guide_arrow"
+                            android:layout_marginRight="20dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/ededed"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

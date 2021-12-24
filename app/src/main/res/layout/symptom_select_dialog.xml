@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_top_radius"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="증상종류"
+                android:textColor="@color/color343434"
+                android:textSize="16dp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="최대 3개까지 선택 가능해요."
+                android:textSize="12dp"
+                android:textColor="@color/acacac"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_symptom_select_dialog_done"
+            android:layout_width="70dp"
+            android:layout_height="36dp"
+            android:background="@drawable/time_choice_button_radius"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:text="확인"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="14dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_symptom_select_dialog_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/img_symptom_bg_off"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_symptom_all"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="전체"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+
+        <LinearLayout
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"/>
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_symptom_select_dialog_cough"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/img_symptom_bg_off"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_symptom_cough"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="기침"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+
+        <LinearLayout
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"/>
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_symptom_select_dialog_phlegm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/img_symptom_bg_off"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_symptom_phlegm"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="가래"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+
+        <LinearLayout
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"/>
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_symptom_select_dialog_breath"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/img_symptom_bg_off"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_symptom_frustrated"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="가슴답답"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_symptom_select_dialog_difficulty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/img_symptom_bg_off"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_symptom_difficulty"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="숨쉬기 불편"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+
+        <LinearLayout
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"/>
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_symptom_select_dialog_wheezing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/img_symptom_bg_off"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_symptom_etc"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="천명음"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+
+        <LinearLayout
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"/>
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_symptom_select_dialog_etc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/img_symptom_bg_off"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_symptom_wheezing"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="기타증상"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+
+        <LinearLayout
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"/>
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_symptom_select_dialog_none"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/img_symptom_bg_off"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_symptom_none"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="증상없음"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
+</LinearLayout>

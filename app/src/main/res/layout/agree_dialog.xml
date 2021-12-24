@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+<!--    height 401dp-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="401dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:weightSum="401">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="19"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="29"
+            android:text="약관동의"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:includeFontPadding="false"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"/>
+
+        <LinearLayout
+            android:id="@+id/lin_agree_check_all"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="63"
+            android:background="@drawable/edit_text_border"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/chb_agree_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="약관 전체 동의"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:paddingLeft="12dp"
+                android:button="@drawable/agree_check_box"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="14"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:paddingLeft="12dp"
+            android:paddingRight="10dp">
+
+            <CheckBox
+                android:id="@+id/chb_agree_service"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="서비스 이용약관 동의 (필수)"
+                android:textSize="14dp"
+                android:textColor="@color/color7e7e7e"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:paddingLeft="12dp"
+                android:button="@drawable/agree_check_box"/>
+            
+            <ImageView
+                android:id="@+id/img_agree_move_service"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_home_guide_arrow"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:paddingLeft="12dp"
+            android:paddingRight="10dp">
+
+            <CheckBox
+                android:id="@+id/chb_agree_personal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="개인정보처리방침 동의 (필수)"
+                android:textSize="14dp"
+                android:textColor="@color/color7e7e7e"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:paddingLeft="12dp"
+                android:button="@drawable/agree_check_box"/>
+
+            <ImageView
+                android:id="@+id/img_agree_move_personal"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_home_guide_arrow"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:paddingLeft="12dp"
+            android:paddingRight="10dp">
+
+            <CheckBox
+                android:id="@+id/chb_agree_sensitivity"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="개인민감정보처리방침 동의 (필수)"
+                android:textSize="14dp"
+                android:textColor="@color/color7e7e7e"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:paddingLeft="12dp"
+                android:button="@drawable/agree_check_box"/>
+
+            <ImageView
+                android:id="@+id/img_agree_move_sensitivity"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_home_guide_arrow"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:paddingLeft="12dp"
+            android:paddingRight="10dp">
+
+            <CheckBox
+                android:id="@+id/chb_agree_marketing"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/agree_marketing_title"
+                android:textSize="14dp"
+                android:gravity="top"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:paddingLeft="12dp"
+                android:button="@drawable/agree_check_box"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="22"/>
+
+        <Button
+            android:id="@+id/btn_agree_done"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="56"
+            android:text="완료"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:background="@drawable/shape_radius_write_bg"
+            android:backgroundTint="@color/dbdbdb"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:enabled="false"
+            android:includeFontPadding="false"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+</LinearLayout>

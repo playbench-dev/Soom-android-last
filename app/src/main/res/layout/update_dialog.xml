@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/radius_dialog">
+
+            <TextView
+                android:id="@+id/txt_dialog_comment_third_remove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="업데이트가 필요해요!"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:textSize="18dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txt_dialog_comment_third_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="확인 버튼을 누르면 스토어로 바로 이동할 수 있어요."
+                android:fontFamily="@font/notosanscjkkr_medium_regular"
+                android:includeFontPadding="false"
+                android:textSize="16dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_update_popup_done"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="확인"
+                    android:textColor="@color/color3382b7"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"/>
+
+                <LinearLayout
+                    android:id="@+id/lin_update_popup_line"
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="@color/ededed"/>
+
+                <Button
+                    android:id="@+id/btn_update_popup_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="취소"
+                    android:textColor="@color/color3382b7"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

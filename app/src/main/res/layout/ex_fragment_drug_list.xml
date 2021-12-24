@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F2F2F4"
+    android:orientation="vertical">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="556"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            app:elevation="0dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_behavior=".Home.HomeItem.FixedAppBarLayoutBehavior">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.kmw.soom2.Home.HomeItem.CustomViewPager
+                                android:id="@+id/view_pager_community_banner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </com.kmw.soom2.Home.HomeItem.CustomViewPager>
+                            <LinearLayout
+                                android:id="@+id/lin_pager_community_banner_cnt_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5.3dp"
+                                android:layout_marginRight="9.9dp"
+                                android:background="@drawable/shape_btn_primary_bg"
+                                android:backgroundTint="#38000000"
+                                android:paddingLeft="7dp"
+                                android:paddingRight="7dp"
+                                android:paddingTop="2dp"
+                                android:paddingBottom="2dp"
+                                android:gravity="center">
+                                <TextView
+                                    android:id="@+id/txt_community_banner_pager_cnt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10dp"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/notosanscjkkr_medium"
+                                    android:includeFontPadding="false"/>
+                                <TextView
+                                    android:id="@+id/txt_community_banner_pager_total_cnt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10dp"
+                                    android:textColor="#b3ffffff"
+                                    android:fontFamily="@font/notosanscjkkr_medium"
+                                    android:includeFontPadding="false"/>
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_drug_current_plus"
+                            android:layout_width="match_parent"
+                            android:layout_height="74dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:gravity="center">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@drawable/community_search_shape_bg">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginLeft="22dp"
+                                    android:text="궁금한 약을 검색해보세요."
+                                    android:textSize="14dp"
+                                    android:textColor="#919191"
+                                    android:fontFamily="@font/notosanscjkkr_medium"
+                                    android:includeFontPadding="false"/>
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/ic_new_community_search"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="17dp"/>
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#e8e8e8"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_drug_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentInsetStart="0dp"
+                android:background="@drawable/elevation_0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:includeFontPadding="false"
+                        android:text="복용중인 약"
+                        android:textColor="#2e2e2e"
+                        android:textSize="16dp"></TextView>
+
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="17dp"
+                        android:src="@drawable/ic_ex"
+                        android:layout_marginLeft="6dp"/>
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_drug_current_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_drug_test"
+                android:overScrollMode="never"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f2f2f4"></androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

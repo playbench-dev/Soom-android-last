@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="100"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/img_community_list_item_profile"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_user_profile"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="7dp"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_community_list_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이디"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/notosanscjkkr_bold"
+                    android:includeFontPadding="false"
+                    android:textColor="#0a0a0a" />
+
+                <TextView
+                    android:id="@+id/txt_community_list_item_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="9dp"
+                    android:fontFamily="@font/notosanscjkkr_medium_regular"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/white"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/custom_primary_50dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_new_community_list_item_category_text"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:background="@drawable/view_new_community_list_item_category_bg"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="#414141"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_community_list_item_contents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="5dp"
+                android:maxLines="6"
+                android:autoLink="web"/>
+            <TextView
+                android:id="@+id/txt_community_list_item_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#AFAFAF"
+                android:text="···더보기"
+                android:gravity="right"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_community_list_item"
+            android:layout_width="65dp"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical">
+
+            <com.kmw.soom2.Communitys.Items.CustomViewPager
+                android:id="@+id/view_pager_community_list_item_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_community_list_item_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="yyyy-MM-dd hh:mm"
+        android:textSize="10dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/notosanscjkkr_medium_regular"
+        android:includeFontPadding="false"
+        android:gravity="center_vertical"
+        android:textColor="#AFAFAF"
+        android:layout_marginBottom="11.5dp"
+        android:layout_marginTop="3dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dddddd"/>
+</LinearLayout>

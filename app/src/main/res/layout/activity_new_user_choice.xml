@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="668"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <ImageView
+            android:id="@+id/img_type_choice_back"
+            android:layout_width="43dp"
+            android:paddingLeft="19dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back"></ImageView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="360"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="37"
+        android:layout_marginLeft="29dp"
+        android:textColor="@color/black"
+        android:text="가입유형"
+        android:fontFamily="@font/notosanscjkkr_bold"
+        android:includeFontPadding="false"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="8dp"
+        app:autoSizeMaxTextSize="26dp"
+        app:autoSizeStepGranularity="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"/>
+
+    <LinearLayout
+        android:id="@+id/lin_user_type_choice_01"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="120"
+        android:layout_marginRight="29dp"
+        android:layout_marginLeft="29dp"
+        android:elevation="2dp"
+        android:background="@drawable/user_type_choice_bg"
+        android:paddingTop="25dp"
+        android:paddingLeft="25dp"
+        android:paddingBottom="24dp"
+        android:paddingRight="24.3dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:weightSum="71">
+
+            <TextView
+                android:id="@+id/txt_user_type_choice_01_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="32"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeMaxTextSize="22dp"
+                app:autoSizeStepGranularity="1dp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:text="환자"
+                android:textColor="#363636"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:id="@+id/txt_user_type_choice_01_contents"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="36"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeMaxTextSize="13dp"
+                app:autoSizeStepGranularity="1dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:text="스스로 관리하고 싶어요."
+                android:textColor="@color/colorb1b1b1"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_user_type_choice_01"
+            android:layout_width="60.7dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_user_type_01_off"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"/>
+
+    <LinearLayout
+        android:id="@+id/lin_user_type_choice_02"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="120"
+        android:layout_marginRight="29dp"
+        android:layout_marginLeft="29dp"
+        android:elevation="2dp"
+        android:background="@drawable/user_type_choice_bg"
+        android:paddingTop="25dp"
+        android:paddingLeft="25dp"
+        android:paddingBottom="24dp"
+        android:paddingRight="24.3dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:weightSum="71">
+
+            <TextView
+                android:id="@+id/txt_user_type_choice_02_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="32"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeMaxTextSize="22dp"
+                app:autoSizeStepGranularity="1dp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:text="보호자"
+                android:textColor="#363636"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:id="@+id/txt_user_type_choice_02_contents"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="36"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeMaxTextSize="13dp"
+                app:autoSizeStepGranularity="1dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:text="가족의 관리를 돕고 싶어요."
+                android:textColor="@color/colorb1b1b1"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_user_type_choice_02"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_user_type_02_off"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"/>
+
+    <LinearLayout
+        android:id="@+id/lin_user_type_choice_03"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="120"
+        android:layout_marginRight="29dp"
+        android:layout_marginLeft="29dp"
+        android:elevation="2dp"
+        android:background="@drawable/user_type_choice_bg"
+        android:paddingTop="25dp"
+        android:paddingLeft="25dp"
+        android:paddingBottom="24dp"
+        android:paddingRight="24.3dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:weightSum="71">
+
+            <TextView
+                android:id="@+id/txt_user_type_choice_03_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="32"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeMaxTextSize="22dp"
+                app:autoSizeStepGranularity="1dp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:text="일반"
+                android:textColor="#363636"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:id="@+id/txt_user_type_choice_03_contents"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="36"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeMaxTextSize="13dp"
+                app:autoSizeStepGranularity="1dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:text="환자도 보호자도 아니에요."
+                android:textColor="@color/colorb1b1b1"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_user_type_choice_03"
+            android:layout_width="58.3dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_user_type_03_off"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45"/>
+
+    <Button
+        android:id="@+id/btn_type_choice_done"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/shape_btn_primary_bg"
+        android:backgroundTint="#dbdbdb"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:text="다음 2/3"
+        android:textColor="#ffffff"
+        android:textSize="15dp"></Button>
+</LinearLayout>

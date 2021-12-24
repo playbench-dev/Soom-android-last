@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_sheet_top_radius_bg"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+<!--    천식질환 지수 안보이게-->
+<!--    android:weightSum="209" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="19dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="검사"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#343434"
+        android:fontFamily="@font/notosanscjkkr_bold"
+        android:includeFontPadding="false"></TextView>
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="손 안에서 해보는 간편한 셀프검사"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:textColor="#343434"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        android:includeFontPadding="false"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="@drawable/self_check_radius"
+            android:elevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_self_check_dust"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="미세먼지"
+                    android:textColor="#343434"
+                    android:textSize="13dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/dust_button_fragment_measure_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"></Button>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="12dp"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="@drawable/self_check_radius"
+            android:elevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_self_check_asthma"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="천식조절검사"
+                    android:textColor="#343434"
+                    android:textSize="13dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/asthma_control_button_fragment_measure_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"></Button>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="12dp"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="@drawable/self_check_radius"
+            android:elevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_self_check_asthma_percent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="천식폐질환\n가능지수"
+                    android:textColor="#343434"
+                    android:gravity="center"
+                    android:textSize="13dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/asthma_percent_button_fragment_measure_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"></Button>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="668"
+    android:background="@color/white"
+    tools:context=".Login.Activitys.NewPermissionInfoActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="41"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="76">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_new_permission_logo_bg"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_new_welcome_logo"
+            android:padding="15dp"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="29"
+        android:text="숨케어 앱 이용을 위한 권한 안내"
+        android:gravity="center"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="8dp"
+        app:autoSizeMaxTextSize="20dp"
+        app:autoSizeStepGranularity="1dp"
+        android:textColor="#363636"
+        android:fontFamily="@font/notosanscjkkr_bold"
+        android:includeFontPadding="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="49dp"
+        android:layout_marginRight="51dp"
+        android:background="#e3e3e3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:layout_marginLeft="56dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_permission_location"
+            android:scaleType="fitStart"/>
+
+        <LinearLayout
+            android:layout_width="14dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="62"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="21"
+                android:text="위치"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeMaxTextSize="19dp"
+                app:autoSizeStepGranularity="1dp"
+                android:textColor="#363636"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="38"
+                android:text="내 현재 위치를 기반으로 미세먼지를\n표시하기 위해 사용합니다."
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeMaxTextSize="17dp"
+                app:autoSizeStepGranularity="1dp"
+                android:textColor="#363636"
+                android:fontFamily="@font/notosanscjkkr_medium_regular"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:layout_marginLeft="56dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_permission_album"
+            android:scaleType="fitStart"/>
+
+        <LinearLayout
+            android:layout_width="14dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="62"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="21"
+                android:text="앨범"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeMaxTextSize="19dp"
+                app:autoSizeStepGranularity="1dp"
+                android:textColor="#363636"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="38"
+                android:text="프로필 사진 등록, 메모와 커뮤니티에서\n사진 첨부를 위해 사용합니다."
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeMaxTextSize="17dp"
+                app:autoSizeStepGranularity="1dp"
+                android:textColor="#363636"
+                android:fontFamily="@font/notosanscjkkr_medium_regular"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:layout_marginLeft="56dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_permission_location"
+            android:scaleType="fitStart"/>
+
+        <LinearLayout
+            android:layout_width="14dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="62"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="21"
+                android:text="카메라"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeMaxTextSize="19dp"
+                app:autoSizeStepGranularity="1dp"
+                android:textColor="#363636"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="38"
+                android:text="프로필 사진, 메모와 커뮤니티에서\n사진을 촬영할 경우 사용합니다."
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeMaxTextSize="17dp"
+                app:autoSizeStepGranularity="1dp"
+                android:textColor="#363636"
+                android:fontFamily="@font/notosanscjkkr_medium_regular"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="49dp"
+        android:layout_marginRight="51dp"
+        android:background="#e3e3e3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14.5"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="36"
+        android:text="선택권한을 동의하지 않으셔도 서비스 이용이 가능하며\n위치정보 이외의 사항은 해당 기능 사용시에 동의받고 있습니다."
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="5dp"
+        app:autoSizeMaxTextSize="14dp"
+        app:autoSizeStepGranularity="1dp"
+        android:gravity="center"
+        android:textColor="#888888"
+        android:fontFamily="@font/notosanscjkkr_medium_regular"
+        android:includeFontPadding="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="24"/>
+
+    <Button
+        android:id="@+id/btn_new_permission_info_done"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:background="@drawable/ic_radius_btn_bg"
+        android:backgroundTint="#08D181"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        android:includeFontPadding="false"
+        android:text="확인"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"></Button>
+
+</LinearLayout>

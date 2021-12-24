@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".MyPage.Activity.MyHospitalInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <ImageView
+            android:id="@+id/back_img_view_activity_attending_hospital"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:paddingLeft="12dp"
+            android:src="@drawable/back_btn_image"></ImageView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="280"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="다니는 병원"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ededed"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="19.5dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:text="병원명"
+                android:gravity="center_vertical"
+                android:textColor="#343434"
+                android:textSize="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"></TextView>
+
+            <ImageView
+                android:id="@+id/share_button_activity_attending_hospital"
+                android:layout_width="100dp"
+                android:layout_height="23dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/direction_icon"></ImageView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:weightSum="360"
+            android:layout_marginLeft="37dp"
+            android:layout_marginRight="37dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/shape_stroke_edit_bg">
+
+            <EditText
+                android:id="@+id/hospital_name_edit_text_activity_attending_hospital"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/notosanscjkkr_medium_regular"
+                android:hint="병원명을 입력해 주세요."
+                android:includeFontPadding="false"
+                android:inputType="textNoSuggestions"
+                android:nextFocusDown="@+id/department_edit_text_activity_attending_hospital"
+                android:singleLine="true"
+                android:textColor="#343434"
+                android:textColorHint="#acacac"
+                android:background="@null"
+                android:textSize="13dp"
+                android:theme="@style/EditTheme"></EditText>
+
+            <ImageView
+                android:id="@+id/img_attending_hospital_search"
+                android:layout_width="24dp"
+                android:layout_height="18.7dp"
+                android:src="@drawable/ic_hospital_search"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="20dp"></ImageView>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:text="담당과"
+                android:gravity="center_vertical"
+                android:textColor="#343434"
+                android:textSize="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"></TextView>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:weightSum="360"
+            android:layout_marginLeft="37dp"
+            android:layout_marginRight="37dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/shape_stroke_edit_bg">
+
+            <EditText
+                android:id="@+id/department_edit_text_activity_attending_hospital"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/notosanscjkkr_medium_regular"
+                android:hint="예) 호흡기내과"
+                android:includeFontPadding="false"
+                android:inputType="textNoSuggestions"
+                android:nextFocusDown="@+id/doctor_name_edit_text_activity_attending_hospital"
+                android:singleLine="true"
+                android:textColor="#343434"
+                android:textColorHint="#acacac"
+                android:background="@null"
+                android:textSize="13dp"
+                android:theme="@style/EditTheme"></EditText>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="37dp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:text="담당 의사선생님"
+                android:gravity="center_vertical"
+                android:textColor="#343434"
+                android:textSize="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"></TextView>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:weightSum="360"
+            android:layout_marginLeft="37dp"
+            android:layout_marginRight="37dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/shape_stroke_edit_bg">
+
+            <EditText
+                android:id="@+id/doctor_name_edit_text_activity_attending_hospital"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/notosanscjkkr_medium_regular"
+                android:hint="예) 김의사"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textColor="#343434"
+                android:textColorHint="#acacac"
+                android:background="@null"
+                android:textSize="13dp"
+                android:theme="@style/EditTheme"></EditText>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ededed"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingTop="16dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="16dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/success_button_radius"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:text="저장하기"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:id="@+id/save_button_activity_attending_hospital"></Button>
+    </LinearLayout>
+</LinearLayout>

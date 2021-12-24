@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MyPage.Activity.AlarmSettingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="672">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="360">
+
+            <TextView
+                android:id="@+id/back_text_view_activity_attending_hospital"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:drawableLeft="@drawable/back_btn_image"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:gravity="left|center_vertical"
+                android:textColor="#343434"
+                android:textSize="18sp"
+                android:paddingLeft="12dp"></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="280"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="설정"
+                android:textColor="#343434"
+                android:textSize="18sp"></TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="#ededed"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="건강 습관 알림"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/color343434"
+                android:textSize="16dp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="편안한 숨을 위한 건강습관 알림"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/color29ba5c"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="주간 증상 체크 알림"
+                    android:textSize="14sp"
+                    android:textColor="#343434"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:layout_marginLeft="20dp"
+                    android:includeFontPadding="false"></TextView>
+
+                <ImageView
+                    android:id="@+id/img_alarm_setting_question"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_question_mark"/>
+            </LinearLayout>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:track="@drawable/switch_track_selector"
+                android:thumb="@drawable/switch_track_thumb_selector"
+                android:layout_gravity="center_vertical|right"
+                android:id="@+id/asthma_control_alarm_switch_activity_alarm_setting"></Switch>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"></LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e4e4"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"></LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="커뮤니티 알림"
+                android:textColor="#343434"
+                android:textSize="16sp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"></TextView>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:track="@drawable/switch_track_selector"
+                android:thumb="@drawable/switch_track_thumb_selector"
+                android:layout_gravity="center_vertical|right"
+                android:id="@+id/community_all_switch_activity_alarm_setting"></Switch>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"></LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="게시글 응원해요"
+                android:textColor="#343434"
+                android:textSize="14sp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"></TextView>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:track="@drawable/switch_track_selector"
+                android:thumb="@drawable/switch_track_thumb_selector"
+                android:layout_gravity="center_vertical|right"
+                android:id="@+id/like_switch_activity_alarm_setting"></Switch>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"></LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:textColor="#343434"
+                android:text="게시글 댓글"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:gravity="center_vertical"></TextView>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:track="@drawable/switch_track_selector"
+                android:thumb="@drawable/switch_track_thumb_selector"
+                android:layout_gravity="center_vertical|right"
+                android:id="@+id/comment_switch_activity_alarm_setting"></Switch>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"></LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:textColor="#343434"
+                android:text="게시글 대댓글"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:gravity="center_vertical"></TextView>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:track="@drawable/switch_track_selector"
+                android:thumb="@drawable/switch_track_thumb_selector"
+                android:layout_gravity="center_vertical|right"
+                android:id="@+id/comment_reply_switch_activity_alarm_setting"></Switch>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e4e4"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="공지사항"
+                    android:textColor="#343434"
+                    android:textSize="16sp"
+                    android:includeFontPadding="false"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/notosanscjkkr_bold"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="업데이트, 긴급공지 등 공지사항 알림"
+                    android:textColor="@color/color29ba5c"
+                    android:textSize="12sp"
+                    android:includeFontPadding="false"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/notosanscjkkr_bold"></TextView>
+            </LinearLayout>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:track="@drawable/switch_track_selector"
+                android:thumb="@drawable/switch_track_thumb_selector"
+                android:layout_gravity="center_vertical|right"
+                android:id="@+id/notice_switch_activity_alarm_setting"></Switch>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"></LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#343434"
+                    android:text="마케팅 알림"
+                    android:fontFamily="@font/notosanscjkkr_bold"
+                    android:includeFontPadding="false"
+                    android:gravity="center_vertical"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="질환 교육, 맞춤 관리 등의 혜택 정보 알림"
+                    android:textColor="@color/color29ba5c"
+                    android:textSize="12sp"
+                    android:includeFontPadding="false"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/notosanscjkkr_bold"></TextView>
+            </LinearLayout>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:track="@drawable/switch_track_selector"
+                android:thumb="@drawable/switch_track_thumb_selector"
+                android:layout_gravity="center_vertical|right"
+                android:id="@+id/swh_alarm_setting_marketing"></Switch>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e4e4"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="알림이 오지 않을 경우, 휴대전화 시스템 설정에서 알림이 켜져 있는지 확인해주세요."
+                android:textColor="@color/colorb1b1b1"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:lineHeight="20dp"/>
+
+            <ImageView
+                android:id="@+id/img_alarm_setting_setting_move"
+                android:layout_width="61dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="19dp"
+                android:src="@drawable/ic_setting_move"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e4e4"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#939393"
+                android:textSize="12sp"
+                android:text="회원탈퇴를 원하시면 "
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#939393"
+                android:textSize="12sp"
+                android:text="@string/here"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:id="@+id/here_text_view_activity_account"
+                android:includeFontPadding="false"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#939393"
+                android:textSize="12sp"
+                android:text="를 눌러 주세요."
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_alarm_setting_question_visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#e9ffe9"
+        android:layout_marginTop="176dp"
+        android:layout_marginLeft="152dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="@color/color343434"
+            android:text="매주 일요일 오후\n일주일 간의 증상회고를\n챙겨주는 알림입니다."
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false" />
+    </LinearLayout>
+
+
+</RelativeLayout>

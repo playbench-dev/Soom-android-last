@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DrugControl.Activity.DrugCompleteListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="360"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/txt_drug_complete_back"
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/back_btn_image"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="left|center_vertical"
+            android:textColor="#343434"
+            android:textSize="18sp"
+            android:paddingLeft="12dp"></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="280"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="center"
+            android:text="복용완료"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+
+    </LinearLayout>
+
+    <com.kmw.soom2.Views.PagingScrollView
+        android:id="@+id/scr_drug_complete"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/lin_drug_complete_no_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="164dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_drug_complete_no_item" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#818181"
+                    android:text="복용 완료된 약이 없어요.\n약 종료일이 지나면 자동으로\n이곳에 등록될 거예요."
+                    android:gravity="center"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_drug_complete_list_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+    </com.kmw.soom2.Views.PagingScrollView>
+
+</LinearLayout>

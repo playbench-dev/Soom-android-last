@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="668"
+    tools:context=".Login.Activitys.LoginUserInfoInsertActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <ImageView
+            android:id="@+id/img_user_info_back"
+            android:layout_width="43dp"
+            android:paddingLeft="19dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back"></ImageView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="360"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="608">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="11dp"></LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_user_info_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="39dp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="정확한 관리를 위해\n여러분에 대해 알려주세요."
+                android:textColor="#343434"
+                android:textSize="26dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="360"
+                android:layout_marginLeft="37dp">
+
+                <TextView
+                    android:id="@+id/txt_user_info_name_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/notosanscjkkr_bold"
+                    android:includeFontPadding="false"
+                    android:text="이름"
+                    android:textColor="#343434"
+                    android:textSize="16dp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal"
+                android:weightSum="360"
+                android:layout_marginLeft="37dp"
+                android:layout_marginRight="37dp"
+                android:background="@drawable/shape_stroke_edit_bg">
+
+                <EditText
+                    android:id="@+id/edt_user_info_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="17dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:hint="이름을 입력해주세요"
+                    android:inputType="textNoSuggestions"
+                    android:maxLines="1"
+                    android:background="@null"
+                    android:nextFocusDown="@+id/birth_edit_text_activity_user_info"
+                    android:textColor="#343434"
+                    android:textColorHint="#b1b1b1"
+                    android:textSize="14dp"
+                    android:theme="@style/EditTheme"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/notosanscjkkr_bold"
+                    android:includeFontPadding="false"
+                    android:text="생년월일"
+                    android:textColor="#343434"
+                    android:textSize="16dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="360"
+                android:layout_marginLeft="37dp"
+                android:layout_marginRight="37dp">
+
+                <TextView
+                    android:id="@+id/edt_user_info_birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_stroke_edit_bg"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/ic_event_black_24dp"
+                    android:drawableTint="#d5d5d5"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="12dp"
+                    android:textColor="#000000"
+                    android:hint="생년월일을 입력해주세요"
+                    android:textColorHint="#b1b1b1"
+                    android:textSize="14dp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/notosanscjkkr_bold"
+                    android:includeFontPadding="false"
+                    android:text="성별"
+                    android:textColor="#343434"
+                    android:textSize="16dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="360">
+
+                <RadioGroup
+                    android:id="@+id/gender_toggle_btn_activity_user_info"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="286"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/male_btn_activity_user_info"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="143"
+                        android:background="@drawable/toggle_btn"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="남성"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:includeFontPadding="false"
+                        android:textColor="#5c5c5c"
+                        android:textSize="14dp"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/feamale_btn_activity_user_info"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:layout_weight="143"
+                        android:background="@drawable/toggle_btn"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:includeFontPadding="false"
+                        android:text="여성"
+                        android:textColor="#5c5c5c"
+                        android:textSize="14dp"></RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="19dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dp">
+
+                <TextView
+                    android:id="@+id/txt_user_info_confirm_title_visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/notosanscjkkr_bold"
+                    android:includeFontPadding="false"
+                    android:text="천식확진 여부"
+                    android:textColor="#343434"
+                   android:textSize="16dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_user_info_confirm_visible"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="360">
+
+                <RadioGroup
+                    android:id="@+id/confirm_toggle_btn_activity_user_info"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="286"
+                    android:gravity="center"
+                    android:weightSum="286"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/confirm_btn_activity_user_info"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="143"
+                        android:background="@drawable/toggle_btn"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="확진"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:includeFontPadding="false"
+                        android:textColor="#5c5c5c"
+                        android:textSize="14dp"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/suspicion_btn_activity_user_info"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:layout_weight="143"
+                        android:background="@drawable/toggle_btn"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="의심"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:includeFontPadding="false"
+                        android:textColor="#5c5c5c"
+                        android:textSize="14dp"></RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_calendar_title_visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/date_info_activity_user_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/notosanscjkkr_bold"
+                    android:includeFontPadding="false"
+                    android:text="확진일"
+                    android:textColor="#343434"
+                    android:textSize="16dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_calendar_visible"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="360"
+                android:layout_marginTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/calendar_text_view_activity_user_info"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="286"
+                    android:background="@drawable/shape_stroke_edit_bg"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/ic_event_black_24dp"
+                    android:drawableTint="#e7e7e7"
+                    android:fontFamily="@font/notosanscjkkr_medium_regular"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:hint="날짜를 선택해주세요."
+                    android:textColor="#000000"
+                    android:textSize="14dp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <Button
+                    android:id="@+id/success_btn_activity_user_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_btn_primary_bg"
+                    android:backgroundTint="@color/dbdbdb"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"
+                    android:gravity="center"
+                    android:text="다음"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    style="?android:attr/borderlessButtonStyle"></Button>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

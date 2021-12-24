@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Communitys.Activitys.NewCommunitySearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/community_search_shape_bg">
+
+                <EditText
+                    android:id="@+id/edt_new_community_search"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="검색어, 또는 해시태그를 입력해보세요."
+                    android:textSize="13dp"
+                    android:fontFamily="@font/notosanscjkkr_medium_regular"
+                    android:includeFontPadding="false"
+                    android:textColorHint="@color/acacac"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"/>
+
+                <ImageView
+                    android:id="@+id/img_new_community_search"
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_new_community_search"
+                    android:layout_marginRight="16dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_new_community_search_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:text="취소"
+                android:textColor="#8B8B8B"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:fontFamily="@font/notosanscjkkr_medium_regular"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_new_community_tag_visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="최근 검색어"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/notosanscjkkr_bold"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/color343434"
+                    android:layout_marginLeft="24.5dp"/>
+
+                <TextView
+                    android:id="@+id/txt_new_community_search_tag_all_remove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="전체삭제"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"
+                    android:textColor="#adadad"
+                    android:layout_marginRight="20dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dddddd"
+                android:layout_marginTop="7.2dp"></LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_new_community_search_no_tag_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="최근 검색어가 없습니다."
+                android:textSize="14dp"
+                android:textColor="@color/acacac"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:layout_marginTop="48dp"/>
+
+            <LinearLayout
+                android:id="@+id/lin_new_community_search_tag_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_new_community_fragment_visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_new_community_search_category"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:tabIndicatorColor="#525252"
+                app:tabIndicatorHeight="3dp"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="#525252"
+                app:tabTextAppearance="@style/tab_text"
+                app:tabTextColor="#474747"></com.google.android.material.tabs.TabLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_new_community_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

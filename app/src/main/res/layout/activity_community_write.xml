@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Communitys.Activitys.CommunityWriteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:weightSum="360"
+            android:elevation="1dp">
+            <TextView
+                android:id="@+id/txt_community_write_back"
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/back_btn_image"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:gravity="left|center_vertical"
+                android:textColor="#343434"
+                android:paddingLeft="12dp"
+                android:textSize="18sp"></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="280"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:textSize="14dp"
+                android:textColor="#343434"
+                android:text="글쓰기"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/src_community_write">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="게시판"
+                        android:textSize="15dp"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/color343434"
+                        android:layout_marginTop="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_community_write_arrow"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="14dp"/>
+
+                            <TextView
+                                android:id="@+id/txt_community_write_category"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="12dp"
+                                android:fontFamily="@font/notosanscjkkr_medium"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:text=""
+                                android:textColor="@color/color343434"
+                                android:background="@drawable/shape_radius_write_bg"
+                                android:textSize="13dp"
+                                android:hint="게시판 선택"></TextView>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="8dp"
+                            android:layout_height="match_parent"/>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_community_write_arrow"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="14dp"/>
+
+                            <TextView
+                                android:id="@+id/txt_community_write_board"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="12dp"
+                                android:fontFamily="@font/notosanscjkkr_medium"
+                                android:includeFontPadding="false"
+                                android:text=""
+                                android:gravity="center_vertical"
+                                android:background="@drawable/shape_radius_write_bg"
+                                android:textColor="@color/color343434"
+                                android:textSize="13dp"
+                                android:hint="상세 게시판 선택"></TextView>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#EDEDED"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="#F7F7F7"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#EDEDED"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:weightSum="100"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="100"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:textSize="15dp"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/notosanscjkkr_bold"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/color343434"
+                            android:text="해시태그"/>
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:scrollbars="none"
+                            android:layout_marginTop="10dp">
+                            <LinearLayout
+                                android:id="@+id/lin_community_write_tag_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"></LinearLayout>
+                        </HorizontalScrollView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/shape_radius_write_bg"
+                            android:layout_marginTop="10dp">
+                            <EditText
+                                android:id="@+id/edt_community_writing_tag_insert"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:textColorHint="@color/colorb1b1b1"
+                                android:hint="원하는 해시태그를 입력해 주세요(#제외)"
+                                android:textSize="13dp"
+                                android:fontFamily="@font/notosanscjkkr_medium_regular"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="12dp"
+                                android:imeOptions="actionDone"
+                                android:maxLength="15"
+                                android:textColor="@color/black"
+                                android:inputType="text"/>
+                            <Button
+                                android:id="@+id/btn_community_write_add"
+                                android:layout_width="65dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/shape_radius_write_add"
+                                android:text="추가"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/notosanscjkkr_medium"
+                                android:includeFontPadding="false"
+                                android:textSize="14dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"></LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#EDEDED"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="#F7F7F7"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#EDEDED"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:textColor="@color/color343434"
+                        android:text="내용"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:includeFontPadding="false"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_community_write_contents_length"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/color343434"
+                        android:text="(0/2000)"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="7dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_community_writing_contents"
+                    android:layout_width="match_parent"
+                    android:layout_height="203dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp">
+
+                    <EditText
+                        android:id="@+id/edt_community_writing_contents"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:background="@null"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:hint="질문, 일상, 증상, 병원 등에 대해\n자유롭게 이야기를 나눠주세요 :D"
+                        android:textColorHint="@color/colorb1b1b1"
+                        android:scrollbarStyle="insideInset"
+                        android:maxLength="2000"
+                        android:scrollbars="vertical"
+                        android:overScrollMode="always"
+                        android:letterSpacing="0.01"
+                        android:lineSpacingExtra="5dp"
+                        android:fontFamily="@font/notosanscjkkr_medium_regular"
+                        android:includeFontPadding="false"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#EDEDED"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="#F7F7F7"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#EDEDED"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="100"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/color343434"
+                            android:text="사진첨부"
+                            android:fontFamily="@font/notosanscjkkr_bold"
+                            android:includeFontPadding="false"
+                            android:textSize="15dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="100">
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="102dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="bottom">
+
+                                    <LinearLayout
+                                        android:id="@+id/lin_community_write_picture"
+                                        android:layout_width="95dp"
+                                        android:layout_height="95dp"
+                                        android:background="@drawable/shape_radius_write_bg"
+                                        android:orientation="vertical"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="24dp"
+                                            android:src="@drawable/ic_community_camera"/>
+
+                                        <TextView
+                                            android:id="@+id/txt_community_write_picture_length"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="0/5"
+                                            android:textColor="@color/acacac"
+                                            android:textSize="12dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="12dp"
+                                        android:layout_height="match_parent"/>
+
+                                    <LinearLayout
+                                        android:id="@+id/lin_community_write_picture_parent"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="bottom">
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </HorizontalScrollView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"></LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:gravity="center"
+            android:background="@color/white">
+            <Button
+                android:id="@+id/btn_community_write_finish"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="게시하기"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/radius_4dp"
+                android:backgroundTint="@color/color09D182"
+                android:textSize="18dp"
+                style="?android:attr/borderlessButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

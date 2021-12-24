@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg_category_community">
+
+    <TextView
+        android:id="@+id/txt_community_category_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="상세 게시판"
+        android:textColor="@color/color343434"
+        android:textSize="20dp"
+        android:fontFamily="@font/notosanscjkkr_bold"
+        android:includeFontPadding="false"/>
+
+    <RadioGroup
+        android:id="@+id/rdo_category_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="31dp"
+        android:paddingLeft="31dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="37dp">
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Home.Activitys.SymptomActivitys.AstmaPercentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <TextView
+            android:id="@+id/txt_asthma_percent_record_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:drawableLeft="@drawable/back_btn_image"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="left|center_vertical"
+            android:textColor="#343434"
+            android:textSize="18sp"
+            android:paddingLeft="12dp"></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="280"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="천식폐질환 가능지수"
+            android:textColor="#343434"
+            android:textSize="16dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:gravity="center_vertical|right">
+            <ImageView
+                android:id="@+id/img_asthma_percent_record_remove"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/trash"
+                android:tint="@color/black"
+                android:layout_marginRight="16dp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/ededed"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="측정일시"
+                android:textColor="@color/color343434"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_arrow_7e7e7e"
+                        android:tint="#4b4b4b"
+                        android:rotation="90"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12.7dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_asthma_percent_record_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="16dp"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:text="test"
+                        android:textColor="#000000"
+                        android:background="@drawable/shape_radius_write_bg"
+                        android:textSize="14dp"></TextView>
+                </RelativeLayout>
+            
+
+                <LinearLayout
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_arrow_7e7e7e"
+                        android:tint="#4b4b4b"
+                        android:rotation="90"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12.7dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_asthma_percent_record_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="16dp"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:includeFontPadding="false"
+                        android:text="test"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/shape_radius_write_bg"
+                        android:textColor="#000000"
+                        android:textSize="14dp"></TextView>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color343434"
+                android:text="측정장소"
+                android:textSize="16dp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/shape_radius_write_bg">
+
+                <TextView
+                    android:id="@+id/txt_asthma_percent_record_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:hint="측정 장소를 입력하세요."
+                    android:inputType="text"
+                    android:textColorHint="@color/colorb1b1b1"
+                    android:background="@null"/>
+
+                <ImageView
+                    android:id="@+id/img_dust_record_location_close"
+                    android:layout_width="16dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_arrow_7e7e7e"
+                    android:tint="#4b4b4b"
+                    android:rotation="90"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color343434"
+                android:text="천식(폐질환)가능지수"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:textSize="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="212dp"
+                android:background="@drawable/shape_radius_write_bg">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="24dp"
+                            android:paddingRight="24dp">
+
+                            <TextView
+                                android:id="@+id/txt_asthma_percent_low"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:textColor="@color/acacac"
+                                android:textSize="13dp"
+                                android:text="낮음"
+                                android:fontFamily="@font/notosanscjkkr_bold"
+                                android:includeFontPadding="false"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/txt_asthma_percent_basic"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:textColor="@color/acacac"
+                                android:textSize="13dp"
+                                android:text="보통"
+                                android:fontFamily="@font/notosanscjkkr_bold"
+                                android:includeFontPadding="false"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/txt_asthma_percent_high"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:textColor="@color/acacac"
+                                android:textSize="13dp"
+                                android:text="높음"
+                                android:fontFamily="@font/notosanscjkkr_bold"
+                                android:includeFontPadding="false"
+                                android:gravity="center"/>
+                            <TextView
+                                android:id="@+id/txt_asthma_percent_go_high"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:textColor="@color/acacac"
+                                android:textSize="13dp"
+                                android:text="매우높음"
+                                android:fontFamily="@font/notosanscjkkr_bold"
+                                android:includeFontPadding="false"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="9dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginRight="24dp">
+
+                            <LinearLayout
+                                android:id="@+id/lin_asthma_percent_bar_bg"
+                                android:layout_width="match_parent"
+                                android:layout_height="14dp"
+                                android:layout_centerInParent="true"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:weightSum="100">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:gravity="center">
+                                    <ImageView
+                                        android:id="@+id/img_asthma_percent_ring_low"
+                                        android:layout_width="14dp"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/asthma_ring_bg"
+                                        android:visibility="invisible"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:gravity="center">
+                                    <ImageView
+                                        android:id="@+id/img_asthma_percent_ring_basic"
+                                        android:layout_width="14dp"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/asthma_ring_bg"
+                                        android:visibility="invisible"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:gravity="center">
+                                    <ImageView
+                                        android:id="@+id/img_asthma_percent_ring_high"
+                                        android:layout_width="14dp"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/asthma_ring_bg"
+                                        android:visibility="invisible"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="25"
+                                    android:gravity="center">
+                                    <ImageView
+                                        android:id="@+id/img_asthma_percent_ring_go_high"
+                                        android:layout_width="14dp"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/asthma_ring_bg"
+                                        android:visibility="invisible"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="대응 요령"
+                            android:textSize="15dp"
+                            android:textColor="#4b4b4b"
+                            android:fontFamily="@font/notosanscjkkr_bold"
+                            android:includeFontPadding="false"
+                            android:gravity="center"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"/>
+
+                        <LinearLayout
+                            android:layout_width="90dp"
+                            android:layout_height="0.5dp"
+                            android:layout_gravity="center"
+                            android:background="#cbcbcb"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="9dp"/>
+
+                        <TextView
+                            android:id="@+id/txt_asthma_percent_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/color343434"
+                            android:textSize="13dp"
+                            android:fontFamily="@font/notosanscjkkr_medium"
+                            android:includeFontPadding="false"
+                            android:text=""/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_asthma_percent_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="측정 장소 선택 후\n확인할 수 있습니다."
+                            android:textSize="13dp"
+                            android:textColor="#606060"
+                            android:gravity="center"
+                            android:fontFamily="@font/notosanscjkkr_bold"
+                            android:includeFontPadding="false"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+            <LinearLayout
+                android:id="@+id/lin_asthma_percent_record_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_question_mark"/>
+
+                <LinearLayout
+                    android:layout_width="3dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"
+                    android:text="@string/asthma_text"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:weightSum="360"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btn_asthma_percent_record_finish"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="320"
+            android:text="완료"
+            android:textColor="@color/white"
+            android:background="@drawable/radius_4dp"
+            android:backgroundTint="@color/color09D182"
+            android:textSize="18dp"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

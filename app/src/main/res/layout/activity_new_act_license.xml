@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="672"
+    android:background="@color/white"
+    tools:context=".Home.Activitys.AdultActivitys.NewActLicenseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="천식조절검사 저작권 표기"
+            android:textColor="@color/color343434"
+            android:textSize="18dp"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:includeFontPadding="false"/>
+
+        <ImageView
+            android:id="@+id/img_new_act_license_back"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_close_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/ededed"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="75.5"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:src="@drawable/ic_act_license_1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="24.8"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="58"
+        android:src="@drawable/ic_act_license_2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="65.2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="300"
+        android:textSize="14dp"
+        android:textColor="#cc000000"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:fontFamily="@font/notosanscjkkr_medium_regular"
+        android:includeFontPadding="false"
+        android:text="&quot;본 저작물은 '보건복지부'에서\n한국 천식 알레르기 협회와 함께\n'2008년'작성하여 공공누리 제1유형으로 개방한\n'천식조절점수'을 이용하였으며,\n해당 저작물은 '보건복지부,\n알림 보도자료(https://url.kr/K4mvyV)'에서\n무료로 다운받으실 수 있습니다.&quot;"/>
+</LinearLayout>

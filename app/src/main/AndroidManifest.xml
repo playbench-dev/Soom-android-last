@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kmw.soom2"
+    android:targetSandboxVersion="1">
+
+    <queries>
+        <intent>
+            <action android:name="com.android.camera.action.CROP" />
+            <data android:scheme="content"
+                android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PICK" />
+            <data android:mimeType="image/*" />
+        </intent>
+    </queries>
+
+    <meta-data
+        android:name="firebase_messaging_auto_init_enabled"
+        android:value="false" />
+    <meta-data
+        android:name="firebase_analytics_collection_enabled"
+        android:value="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+<!--    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"-->
+<!--        tools:ignore="ScopedStorage"/>-->
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".GlobalApplication"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:icon="@mipmap/soom_logo_512"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:launchMode="singleTop"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/soom_logo_512"
+        android:supportsRtl="true"
+        android:theme="@style/statusBarTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Communitys.Activitys.NewCommunitySearchActivity"></activity>
+        <activity android:name=".Login.Activitys.SuccessPwSearchActivity" />
+        <activity android:name=".ImageCropTestActivity" />
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+        <activity
+            android:name=".Home.Activitys.MedicineInsertActivity.MedicineReviewListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ex.Static.exStaticTotalActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ex.Static.exStaticActActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ex.Static.exStaticBreathActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ex.Static.exStaticSymptomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ex.Static.exStaticMedicineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ex.Home.exMedicineMoveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ex.Home.exSymptomMoveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ex.Home.exBreathMoveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ex.Home.exMemoMoveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ex.NewAnotherLoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="login"
+                    android:scheme="login" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ex.exMainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="home"
+                    android:pathPrefix="/tab/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="home"
+                    android:pathPrefix="/medicine/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="home"
+                    android:pathPrefix="/symptom/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="home"
+                    android:pathPrefix="/pef/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="home"
+                    android:pathPrefix="/memo/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="home"
+                    android:pathPrefix="/act/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="home"
+                    android:pathPrefix="/dust/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="home"
+                    android:pathPrefix="/asthma/"
+                    android:scheme="exmain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="manage"
+                    android:pathPrefix="/tab/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="manage"
+                    android:pathPrefix="/medicine/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="manage"
+                    android:pathPrefix="/alarm/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="manage"
+                    android:pathPrefix="/search/"
+                    android:scheme="exmain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="community"
+                    android:pathPrefix="/tab/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="community"
+                    android:pathPrefix="/notice/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="community"
+                    android:pathPrefix="/all/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="community"
+                    android:pathPrefix="/contents/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="community"
+                    android:pathPrefix="/write/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="community"
+                    android:pathPrefix="/search/"
+                    android:scheme="exmain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="community_detail"
+                    android:scheme="exmain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="report"
+                    android:pathPrefix="/tab/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="report"
+                    android:pathPrefix="/medicine/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="report"
+                    android:pathPrefix="/symptom/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="report"
+                    android:pathPrefix="/pef/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="report"
+                    android:pathPrefix="/act/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="report"
+                    android:pathPrefix="/total/"
+                    android:scheme="exmain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="mypage"
+                    android:pathPrefix="/tab/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="mypage"
+                    android:pathPrefix="/hospital/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="mypage"
+                    android:pathPrefix="/inquery/"
+                    android:scheme="exmain" />
+                <data
+                    android:host="mypage"
+                    android:pathPrefix="/notice/"
+                    android:scheme="exmain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login.Activitys.NewAnotherLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.Activitys.NewPermissionInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.Activitys.NewWorkThroughActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Reports.Activitys.NewStaticSymptomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.SymptomActivitys.NewMedicineEditRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.SymptomActivitys.NewSymptomRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.AsthmaPercentDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.SymptomActivitys.AstmaPercentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.AdultActivitys.NewActLicenseActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.CodelessDebugLogEnabled"
+            android:value="true" />
+
+        <activity
+            android:name=".Communitys.Activitys.NewCommunityDetailActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="community"
+                    android:scheme="soomcare" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Reports.Activitys.TotalStaticActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.CoachMark.CommunityCoachMarkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.CoachMark.MedicineCoachMarkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.CoachMark.HomeCoachMarkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.Activitys.WelcomeMedicinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.UrlWebViewActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Communitys.Activitys.ViewImgDetailActivity"
+            android:configChanges="orientation|screenSize" />
+
+        <service
+            android:name=".ForecdTerminationService"
+            android:stopWithTask="false" />
+        <service
+            android:name=".Common.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- [END firebase_service] -->
+        <activity
+            android:name=".Reports.Activitys.StaticBreathNoResultDetailInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".BootReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".AlarmService"
+            android:enabled="true" />
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true" />
+
+        <activity
+            android:name=".DrugControl.Activity.DrugCompleteListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Common.Activity.CropImageActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Common.Activity.PushAlarmListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPage.Activity.NoticeDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPage.Activity.MypageCreateCsvActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Communitys.Activitys.VideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPage.Activity.HospitalSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPage.Activity.NoticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Reports.Activitys.StaticAsthmaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Reports.Activitys.StaticBreathActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Reports.Activitys.StaticMedicineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Communitys.Activitys.GalleryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Communitys.Activitys.CommunityWriteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Communitys.Activitys.LikeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DrugControl.Activity.DrugAlarmInsertActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.MedicineInsertActivity.MedicineReviewWriteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.MedicineInsertActivity.MedicineInsertActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".Home.Activitys.MedicineInsertActivity.MedicineSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.MedicineInsertActivity.MedicineSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.AdultActivitys.AdultCheckResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.AdultActivitys.AdultCheckFiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.AdultActivitys.AdultCheckFourActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.AdultActivitys.AdultCheckThirdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.AdultActivitys.AdultCheckSecondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.AdultActivitys.AdultCheckFirstActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.KidsActivitys.KidsCheckFiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.KidsActivitys.KidsCheckFourActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.KidsActivitys.KidsCheckThirdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.KidsActivitys.KidsCheckSecondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.KidsActivitys.KidsCheckFirstActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.SymptomActivitys.DustRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.SymptomActivitys.BreathRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.SymptomActivitys.MedicinRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.Activitys.SearchPwActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.Activitys.EmailLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPage.Activity.AirPollutionInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPage.Activity.InquiryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPage.Activity.AlarmSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPage.Activity.MyHospitalInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPage.Activity.PatientInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPage.Activity.PostsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPage.Activity.AccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.Activitys.WelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.SymptomActivitys.AsthmaControlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.SymptomActivitys.MemoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Reports.Activitys.StaticBreathDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Reports.Activitys.StaticAsthmaResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Reports.Activitys.ActResult.StaticActResultFirstActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Reports.Activitys.ActResult.StaticActResultSecondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Reports.Activitys.ActResult.StaticActResultThirdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Reports.Activitys.ActResult.StaticActResultFourthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Reports.Activitys.ActResult.StaticActResultFifthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.TakingRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.FilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Activitys.CalendarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="home"
+                    android:pathPrefix="/tab/"
+                    android:scheme="main" />
+                <data
+                    android:host="home"
+                    android:pathPrefix="/medicine/"
+                    android:scheme="main" />
+                <data
+                    android:host="home"
+                    android:pathPrefix="/symptom/"
+                    android:scheme="main" />
+                <data
+                    android:host="home"
+                    android:pathPrefix="/pef/"
+                    android:scheme="main" />
+                <data
+                    android:host="home"
+                    android:pathPrefix="/memo/"
+                    android:scheme="main" />
+                <data
+                    android:host="home"
+                    android:pathPrefix="/act/"
+                    android:scheme="main" />
+                <data
+                    android:host="home"
+                    android:pathPrefix="/dust/"
+                    android:scheme="main" />
+                <data
+                    android:host="home"
+                    android:pathPrefix="/asthma/"
+                    android:scheme="main" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="manage"
+                    android:pathPrefix="/tab/"
+                    android:scheme="main" />
+                <data
+                    android:host="manage"
+                    android:pathPrefix="/medicine/"
+                    android:scheme="main" />
+                <data
+                    android:host="manage"
+                    android:pathPrefix="/alarm/"
+                    android:scheme="main" />
+                <data
+                    android:host="manage"
+                    android:pathPrefix="/search/"
+                    android:scheme="main" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="community"
+                    android:pathPrefix="/tab/"
+                    android:scheme="main" />
+                <data
+                    android:host="community"
+                    android:pathPrefix="/notice/"
+                    android:scheme="main" />
+                <data
+                    android:host="community"
+                    android:pathPrefix="/all/"
+                    android:scheme="main" />
+                <data
+                    android:host="community"
+                    android:pathPrefix="/contents/"
+                    android:scheme="main" />
+                <data
+                    android:host="community"
+                    android:pathPrefix="/write/"
+                    android:scheme="main" />
+                <data
+                    android:host="community"
+                    android:pathPrefix="/search/"
+                    android:scheme="main" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="community_detail"
+                    android:scheme="main" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="report"
+                    android:pathPrefix="/tab/"
+                    android:scheme="main" />
+                <data
+                    android:host="report"
+                    android:pathPrefix="/medicine/"
+                    android:scheme="main" />
+                <data
+                    android:host="report"
+                    android:pathPrefix="/symptom/"
+                    android:scheme="main" />
+                <data
+                    android:host="report"
+                    android:pathPrefix="/pef/"
+                    android:scheme="main" />
+                <data
+                    android:host="report"
+                    android:pathPrefix="/act/"
+                    android:scheme="main" />
+                <data
+                    android:host="report"
+                    android:pathPrefix="/total/"
+                    android:scheme="main" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="mypage"
+                    android:pathPrefix="/tab/"
+                    android:scheme="main" />
+                <data
+                    android:host="mypage"
+                    android:pathPrefix="/hospital/"
+                    android:scheme="main" />
+                <data
+                    android:host="mypage"
+                    android:pathPrefix="/inquery/"
+                    android:scheme="main" />
+                <data
+                    android:host="mypage"
+                    android:pathPrefix="/notice/"
+                    android:scheme="main" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.Activitys.DatePickerDialogActivity" />
+        <activity
+            android:name=".Login.Activitys.LoginUserInfoInsertActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.Activitys.SnsSignupActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="oauth"
+                    android:scheme="kakao1a4c1cf941ede51771bbfc1588e37a01" />
+            </intent-filter>
+        </activity> <!-- <meta-data -->
+        <!-- android:name="com.kakao.sdk.AppKey" -->
+        <!-- android:value="@string/kakao_app_key" /> -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.kmw.soom2.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity
+            android:name=".Login.Activitys.SearchIdResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.Activitys.SearchIdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.Activitys.EmailSignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.Activitys.AgreeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.Activitys.UserTypeChoiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login.Activitys.LoginSignUpSelectActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

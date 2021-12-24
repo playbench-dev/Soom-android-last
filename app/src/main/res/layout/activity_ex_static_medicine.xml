@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="360">
+            <TextView
+                android:id="@+id/txt_statics_medicine_back"
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:paddingLeft="12dp"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/back_btn_image"
+                android:gravity="left|center_vertical"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:textColor="#343434"
+                android:textSize="18sp"></TextView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="280"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/notosanscjkkr_bold"
+                    android:includeFontPadding="false"
+                    android:textColor="#343434"
+                    android:text="약 보고서"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/ic_ex"
+                    android:layout_marginLeft="6dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:text="아래 예시보고서는 약 기록 시\n나만의 보고서로 변경됩니다."
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:textColor="@color/color343434"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="23dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/f5f5f5"
+            android:gravity="center">
+            <LinearLayout
+                android:id="@+id/lin_statics_medicine_left_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:visibility="invisible"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/calendar_padding">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_home_guide_arrow"
+                    android:rotation="180"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:tint="@color/black"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_statics_medicine_title"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="false"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:tag="dateTitle"
+                android:text="MONTH YEAR"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:id="@+id/lin_statics_medicine_right_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                android:layout_marginLeft="@dimen/calendar_padding">
+
+                <ImageView
+                    android:id="@+id/img_statics_medicine_right_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_home_guide_arrow"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:tint="@color/acacac"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <com.kmw.soom2.Views.StaticMedicineCalendarView
+            android:id="@+id/calendar_statics_medicine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.kmw.soom2.Views.StaticMedicineCalendarView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#f5f5f5"></LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/radius_4dp"
+                    android:backgroundTint="@color/f5f5f5"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:includeFontPadding="false"
+                        android:text="약을 선택해주세요. 복용한 날을 모아 볼 수 있습니다."
+                        android:textSize="12dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="11dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+                        <LinearLayout
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:background="@drawable/radius_4dp"
+                            android:backgroundTint="@color/colorPrimary"/>
+
+                        <LinearLayout
+                            android:layout_width="4dp"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:text="일반복용"/>
+
+                        <LinearLayout
+                            android:layout_width="33dp"
+                            android:layout_height="match_parent"/>
+
+                        <LinearLayout
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:background="@drawable/radius_4dp"
+                            android:backgroundTint="@color/ff6767"/>
+
+                        <LinearLayout
+                            android:layout_width="4dp"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:text="응급복용"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"/>
+
+                <LinearLayout
+                    android:id="@+id/lin_statics_medicine_list_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_ex_medicine_static_move"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/shape_shadow_primary_bg"
+            android:text="내 보고서 만들러 가기 📄"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:elevation="10dp"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:includeFontPadding="false"/>
+    </LinearLayout>
+
+</RelativeLayout>

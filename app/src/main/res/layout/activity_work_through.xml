@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="668"
+    tools:context=".Login.Activitys.WelcomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="75"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="44"
+        android:textColor="@color/black"
+        android:text="환영합니다!"
+        android:gravity="center"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="16dp"
+        app:autoSizeMaxTextSize="30dp"
+        app:autoSizeStepGranularity="1dp"
+        android:fontFamily="@font/notosanscjkkr_bold"
+        android:includeFontPadding="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="51"
+        android:textColor="@color/color00ce60"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="10dp"
+        app:autoSizeMaxTextSize="18dp"
+        app:autoSizeStepGranularity="1dp"
+        android:text="이제부터 숨케어와 함께\n편한 숨쉬기 시작해요."
+        android:gravity="center"
+        android:fontFamily="@font/notosanscjkkr_bold"
+        android:includeFontPadding="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="29"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="264">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_welcome_bg" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_new_welcome_logo"
+            android:layout_margin="44dp"/>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100.3"/>
+
+    <Button
+        android:id="@+id/btn_welcome_confirm"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:background="@drawable/ic_radius_btn_bg"
+        android:backgroundTint="#08D181"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        android:includeFontPadding="false"
+        android:text="완료"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"></Button>
+
+
+</LinearLayout>

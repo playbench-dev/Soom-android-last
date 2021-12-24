@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="668"
+    tools:context=".Login.Activitys.EmailLoginActivity"
+    android:id="@+id/lin_email_login_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <ImageView
+            android:id="@+id/img_email_login_back"
+            android:layout_width="43dp"
+            android:paddingLeft="19dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back"></ImageView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="360"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/ic_new_welcome_logo"></ImageView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="37dp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:gravity="center_vertical"
+                android:textSize="26dp"
+                android:text="이메일로 로그인"
+                android:textColor="#343434"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:text="아이디"
+                android:textSize="16dp"
+                android:textColor="#343434"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="37dp"
+                android:background="@drawable/shape_stroke_edit_bg">
+
+                <EditText
+                    android:id="@+id/edt_email_login_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="19dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:hint="이메일을 입력해주세요."
+                    android:includeFontPadding="false"
+                    android:nextFocusDown="@+id/birth_edit_activity_search_id"
+                    android:inputType="textNoSuggestions"
+                    android:singleLine="true"
+                    android:textColor="#343434"
+                    android:background="@null"
+                    android:textColorHint="#acacac"
+                    android:textSize="14dp"
+                    android:theme="@style/EditTheme"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="19dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="19"
+                android:layout_marginLeft="37dp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:text="비밀번호"
+                android:textSize="16dp"
+                android:textColor="#343434"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="37dp"
+                android:background="@drawable/shape_stroke_edit_bg">
+
+                <EditText
+                    android:id="@+id/edt_email_login_pw"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="19dp"
+                    android:fontFamily="@font/notosanscjkkr_medium_regular"
+                    android:hint="비밀번호를 입력해주세요."
+                    android:imeOptions="actionDone"
+                    android:includeFontPadding="false"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:background="@null"
+                    android:textColor="#343434"
+                    android:textColorHint="#acacac"
+                    android:textSize="14dp"
+                    android:theme="@style/EditTheme"></EditText>
+
+                <ImageView
+                    android:id="@+id/img_email_login_pw_hide"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_pw_off"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="14dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25.2dp"
+                android:gravity="center"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="37dp"
+                android:background="#dedede"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="11.2dp"
+                android:gravity="center"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/txt_email_login_id_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#909090"
+                    android:text="아이디찾기"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#909090"
+                    android:text="  |  "
+                    android:textSize="13dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"/>
+
+                <TextView
+                    android:id="@+id/txt_email_login_pw_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#909090"
+                    android:text="비밀번호찾기"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#909090"
+                    android:text="  |  "
+                    android:textSize="13dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"/>
+
+                <TextView
+                    android:id="@+id/txt_email_login_sign_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#909090"
+                    android:text="회원가입"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="29dp"
+                android:layout_marginRight="29dp">
+
+                <Button
+                    android:id="@+id/btn_email_login_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_btn_primary_bg"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"
+                    android:gravity="center"
+                    android:text="로그인"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    style="?android:attr/borderlessButtonStyle"></Button>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

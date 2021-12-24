@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Home.Activitys.SymptomActivitys.NewMedicineEditRecordActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <TextView
+            android:id="@+id/txt_medicine_record_edit_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:drawableLeft="@drawable/back_btn_image"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="left|center_vertical"
+            android:textColor="#343434"
+            android:textSize="18sp"
+            android:paddingLeft="12dp"></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="280"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="복용기록 편집"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:gravity="center_vertical|right">
+            <ImageView
+                android:id="@+id/img_medicine_record_edit_all_remove"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/trash"
+                android:layout_marginRight="16dp"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.kmw.soom2.Views.CustomScrollView
+        android:id="@+id/scr_medicine_record_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:textColor="@color/color343434"
+                android:text="복용일시"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_arrow_7e7e7e"
+                        android:tint="#4b4b4b"
+                        android:rotation="90"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12.7dp"/>
+                    <TextView
+                        android:id="@+id/txt_medicine_record_edit_date"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="16dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/acacac"
+                        android:textSize="14dp"
+                        android:background="@drawable/shape_stroke_edit_bg"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent"/>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_arrow_7e7e7e"
+                        android:tint="#4b4b4b"
+                        android:rotation="90"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12.7dp"/>
+                    <TextView
+                        android:id="@+id/txt_medicine_record_edit_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="16dp"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:background="@drawable/shape_stroke_edit_bg"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+
+            <LinearLayout
+                android:id="@+id/lin_medicine_record_info_visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="약 리스트"
+                    android:textColor="@color/color343434"
+                    android:fontFamily="@font/notosanscjkkr_bold"
+                    android:includeFontPadding="false"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:background="@drawable/radius_4dp"
+                        android:backgroundTint="@color/color09D192"/>
+
+                    <LinearLayout
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:text="일반"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:includeFontPadding="false"/>
+
+                    <LinearLayout
+                        android:layout_width="6dp"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:background="@drawable/radius_4dp"
+                        android:backgroundTint="@color/ff6767"/>
+
+                    <LinearLayout
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:text="응급"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:includeFontPadding="false"/>
+
+                    <LinearLayout
+                        android:layout_width="6dp"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:background="@drawable/radius_4dp"
+                        android:backgroundTint="@color/d2d6d9"/>
+
+                    <LinearLayout
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:text="생략"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:includeFontPadding="false"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="19dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/list_medicine_record_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:text="메모"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_new_symptom_memo_length"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="#343434"
+                        android:textSize="16dp"
+                        android:text="(0/2000)"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/notosanscjkkr_bold"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="163dp">
+
+                    <EditText
+                        android:id="@+id/edt_new_symptom_record_memo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_radius_write_bg"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:gravity="top"
+                        android:hint="복용 전후 특이사항은 없으셨나요?"
+                        android:includeFontPadding="false"
+                        android:inputType="textNoSuggestions|textMultiLine"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="12dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#b1b1b1"
+                        android:textSize="14sp"
+                        android:maxLength="2000"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:overScrollMode="always"
+                        android:theme="@style/EditTheme1"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"></LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.kmw.soom2.Views.CustomScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:weightSum="360"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btn_medicine_record_edit_finish"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="360"
+            android:text="완료"
+            android:textColor="@color/white"
+            android:background="@drawable/radius_4dp"
+            android:backgroundTint="@color/color09D182"
+            android:textSize="18dp"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Communitys.Activitys.CommunitySearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="360"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/txt_community_search_back"
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/back_btn_image"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:gravity="left|center_vertical"
+                android:textColor="#343434"
+                android:paddingLeft="12dp"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="280"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:text="게시글 검색"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="12dp"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="100"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_medicine_info_bg">
+
+            <EditText
+                android:id="@+id/edt_community_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="검색어를 입력해주세요."
+                android:textSize="16dp"
+                android:textColorHint="@color/acacac"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"
+                android:paddingLeft="15dp"
+                android:background="@null"/>
+
+            <ImageView
+                android:id="@+id/img_community_search_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_community_search"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="12dp"
+                android:tint="@color/acacac"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_community_search_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:weightSum="100">
+                <LinearLayout
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="100"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:includeFontPadding="false"
+                        android:text="인기 카테고리"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="13dp"></LinearLayout>
+
+                        <com.kmw.soom2.Common.Item.FlowLayout
+                            android:id="@+id/lin_community_search_category_parent"
+                            android:layout_width="wrap_content"
+                            app:itemSpacing="8dp"
+                            android:layout_height="wrap_content">
+
+                        </com.kmw.soom2.Common.Item.FlowLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_view_community_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="8dp"
+                android:background="@color/white"
+                android:visibility="gone"></androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/lin_community_no_word"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_medicine_plus_icon"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="검색 결과가 없어요."
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:textColor="@color/acacac"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="17dp"></LinearLayout>
+            <TextView
+                android:id="@+id/cncjszkxprhfl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="@color/color343434"
+                android:text="추천 해시태그"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"></TextView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"></LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin_category_parent_activity_community_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:weightSum="360"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="26dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/ghkfdyd_parent_activity_community_search">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/img_community_search_01">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/img_community_search_blur"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="무료교육"
+                            android:textSize="16dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/notosanscjkkr_bold"
+                            android:includeFontPadding="false"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="14dp"
+                        android:id="@+id/tnazpdjsbtm_parent_activity_community_search">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/img_community_search_02">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/img_community_search_blur"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="흡입기 사용법"
+                            android:textSize="16dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/notosanscjkkr_bold"
+                            android:includeFontPadding="false"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp">
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/rlfhrqkd_parent_activity_community_search">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/img_community_search_03">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/img_community_search_blur"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="호흡기질환 치료\n우수병원"
+                            android:textSize="16dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/notosanscjkkr_bold"
+                            android:includeFontPadding="false"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="14dp"
+                        android:id="@+id/alfckr_parent_activity_community_search">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/img_community_search_04">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/img_community_search_blur"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="숨케어 협력병원"
+                            android:textSize="16dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/notosanscjkkr_bold"
+                            android:includeFontPadding="false"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

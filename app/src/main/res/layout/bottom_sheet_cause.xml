@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_top_radius"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="증상원인"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:includeFontPadding="false"
+            android:gravity="center_vertical"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_causes_popup_save"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:text="저장하기"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:background="@drawable/radius_4dp"
+            android:backgroundTint="@color/f5f6fa"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_cause_popup_01"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/symptom_cause_bg_off"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_cause_01"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="감기"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+
+        <LinearLayout
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"/>
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_cause_popup_02"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/symptom_cause_bg_off"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_cause_02"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="미세먼지"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+
+        <LinearLayout
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"/>
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_cause_popup_03"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/symptom_cause_bg_off"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_cause_03"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="찬바람"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+
+        <LinearLayout
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"/>
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_cause_popup_04"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/symptom_cause_bg_off"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_cause_04"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="운동"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_cause_popup_05"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/symptom_cause_bg_off"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_cause_05"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="집먼지진드기"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+
+        <LinearLayout
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"/>
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_cause_popup_06"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/symptom_cause_bg_off"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_cause_06"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="애완동물"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+
+        <LinearLayout
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"/>
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_cause_popup_07"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/symptom_cause_bg_off"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_cause_07"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="음식알러지"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+
+        <LinearLayout
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"/>
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_cause_popup_08"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/symptom_cause_bg_off"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_cause_08"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="꽃가루"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_cause_popup_09"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/symptom_cause_bg_off"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_cause_09"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="스트레스"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+
+        <LinearLayout
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"/>
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_cause_popup_10"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/symptom_cause_bg_off"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_cause_10"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="담배연기"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+
+        <LinearLayout
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"/>
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_cause_popup_11"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/symptom_cause_bg_off"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_cause_11"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="요리연기"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+
+        <LinearLayout
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"/>
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_cause_popup_12"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/symptom_cause_bg_off"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_cause_12"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="강한냄새"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_cause_popup_13"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/symptom_cause_bg_off"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_cause_13"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="건조함"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+
+        <LinearLayout
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"/>
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_cause_popup_14"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/symptom_cause_bg_off"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_cause_14"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="곰팡이"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+
+        <LinearLayout
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"/>
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_cause_popup_15"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/symptom_cause_bg_off"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_cause_15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="높은습도"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+
+        <LinearLayout
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"/>
+
+        <com.kmw.soom2.Views.SquareLinearLayout
+            android:id="@+id/lin_cause_popup_16"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/symptom_cause_bg_off"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_cause_16"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="기타"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+        </com.kmw.soom2.Views.SquareLinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textColor="@color/acacac"
+        android:text="증상원인을 선택해주세요(복수선택 가능)"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        android:includeFontPadding="false"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+</LinearLayout>

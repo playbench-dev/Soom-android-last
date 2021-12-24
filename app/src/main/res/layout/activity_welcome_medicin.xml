@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.Activitys.WelcomeMedicinActivity"
+    android:weightSum="668"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"/>
+
+    <TextView
+        android:id="@+id/txt_welcome_medicine_skip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17"
+        android:textColor="@color/colorb1b1b1"
+        android:text="@string/skip_medicine_insert"
+        android:gravity="right"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="8dp"
+        app:autoSizeMaxTextSize="12dp"
+        app:autoSizeStepGranularity="1dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/notosanscjkkr_medium_regular"
+        android:includeFontPadding="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="39"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="41"
+        android:text="약을 잘 먹고 있나?"
+        android:gravity="center"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="8dp"
+        app:autoSizeMaxTextSize="28dp"
+        app:autoSizeStepGranularity="1dp"
+        android:textColor="@color/color191919"
+        android:fontFamily="@font/notosanscjkkr_bold"
+        android:includeFontPadding="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="52"
+        android:text="정보, 알람, 부작용 후기까지\n약관리를 한 번에!"
+        android:gravity="center"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="8dp"
+        app:autoSizeMaxTextSize="18dp"
+        app:autoSizeStepGranularity="1dp"
+        android:textColor="@color/color191919"
+        android:fontFamily="@font/notosanscjkkr_medium_regular"
+        android:includeFontPadding="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="41"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="294">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="294"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="264"
+                android:src="@drawable/img_welcome_medicine_bg" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="294">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="53.7dp"
+                android:src="@drawable/ic_welcome_medicine_top_left"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="61dp"/>
+
+            <ImageView
+                android:layout_width="51.3dp"
+                android:layout_height="64.9dp"
+                android:src="@drawable/ic_welcome_medicine_top_right"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="55dp"/>
+
+            <ImageView
+                android:layout_width="45.4dp"
+                android:layout_height="77.7dp"
+                android:src="@drawable/ic_welcome_medicine_center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="71dp"/>
+
+            <ImageView
+                android:layout_width="51.1dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_welcome_medicine_bottom_left"
+                android:layout_marginTop="153.9dp"
+                android:layout_marginLeft="71.6dp"/>
+
+            <ImageView
+                android:layout_width="62.8dp"
+                android:layout_height="62.8dp"
+                android:src="@drawable/ic_welcome_medicine_bottom_right"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="63.3dp"
+                android:layout_marginTop="150.7dp"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="64.3"/>
+
+    <Button
+        android:id="@+id/btn_welcome_medicine_confirm"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:background="@drawable/ic_radius_btn_bg"
+        android:backgroundTint="#08D181"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        android:includeFontPadding="false"
+        android:text="약 추가하기"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"></Button>
+</LinearLayout>

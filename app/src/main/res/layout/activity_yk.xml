@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="672"
+    tools:context=".Login.Activitys.AgreeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <TextView
+            android:id="@+id/txt_agree_detail_back"
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/back_btn_image"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="280"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="약관안내"
+            android:textSize="18dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/edit_text_border">
+
+        <TextView
+            android:id="@+id/txt_agree_detail_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_keyboard_arrow_down"
+            android:tint="@color/black"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="520">
+
+        <WebView
+            android:id="@+id/webView_agree_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:includeFontPadding="false"
+            android:textColor="#acacac"></WebView>
+    </LinearLayout>
+
+</LinearLayout>

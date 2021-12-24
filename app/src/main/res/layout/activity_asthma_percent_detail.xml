@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Home.Activitys.AsthmaPercentDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <TextView
+            android:id="@+id/txt_asthma_percent_detail_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:drawableLeft="@drawable/back_btn_image"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="left|center_vertical"
+            android:textColor="#343434"
+            android:textSize="18sp"
+            android:paddingLeft="12dp"></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="280"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="천식폐질환 가능지수"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/ededed"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color343434"
+                    android:textSize="14dp"
+                    android:text="@string/asthma_detail_first_title"
+                    android:fontFamily="@font/notosanscjkkr_bold"
+                    android:includeFontPadding="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="출처:기상청"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/color343434"
+                    android:fontFamily="@font/notosanscjkkr_medium_regular"
+                    android:includeFontPadding="false"
+                    android:textSize="10dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"></LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="기상조건(최저기온, 일교차, 현지기압, 상대습도)에 따른,\n천식·폐질환 발생 가능정도를 나타낸 지수입니다."
+                android:textSize="12dp"
+                android:textColor="@color/color343434"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="12dp"></LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color343434"
+                android:textSize="14dp"
+                android:text="@string/asthma_detail_second_title"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"></LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="오전 6시, 오후6시(하루 2번)"
+                android:textSize="12dp"
+                android:textColor="@color/color343434"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:includeFontPadding="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="12dp"></LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color343434"
+                android:textSize="14dp"
+                android:text="@string/asthma_detail_third_title"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="16dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="312dp"
+                android:background="@drawable/edit_text_border"
+                android:orientation="vertical"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="25"
+                    android:weightSum="320">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="72"
+                        android:textColor="#e02d2d"
+                        android:textSize="12dp"
+                        android:text="매우높음"
+                        android:gravity="center"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:includeFontPadding="false"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248"
+                        android:text="청결한 환경을 유지하는데 각별히 신경쓰기\n천식환자들은 각별한 주의 요망"
+                        android:textColor="@color/color343434"
+                        android:textSize="12dp"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:includeFontPadding="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/d5d5d5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="25"
+                    android:weightSum="320">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="72"
+                        android:textColor="#f79d23"
+                        android:textSize="12dp"
+                        android:text="높음"
+                        android:gravity="center"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:includeFontPadding="false"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248"
+                        android:text="청실내를 청결하게 하고 자주 환기하기 대기오염이\n증가하는 시기에는 창문과 문을 닫아 외부 \n노출을 줄이고 공기청정기 사용하기"
+                        android:textColor="@color/color343434"
+                        android:textSize="12dp"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:includeFontPadding="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/d5d5d5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="25"
+                    android:weightSum="320">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="72"
+                        android:textColor="#ead21b"
+                        android:textSize="12dp"
+                        android:text="보통"
+                        android:gravity="center"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:includeFontPadding="false"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248"
+                        android:text="규칙적인 생활습관 유지하기\n만성 천식, 폐질환 환자들은 주의"
+                        android:textColor="@color/color343434"
+                        android:textSize="12dp"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:includeFontPadding="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/d5d5d5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="25"
+                    android:weightSum="320">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="72"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12dp"
+                        android:text="낮음"
+                        android:gravity="center"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:includeFontPadding="false"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="248"
+                        android:text="평소 건강관리에 유의하기"
+                        android:textColor="@color/color343434"
+                        android:textSize="12dp"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:includeFontPadding="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/d5d5d5"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

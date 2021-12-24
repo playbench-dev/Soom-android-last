@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <com.kmw.soom2.Views.ImagePinch
+        android:id="@+id/img_view_pager_community_detail_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_view_pager_community_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+    </com.kmw.soom2.Views.ImagePinch>
+    <com.kmw.soom2.Views.CustomExoPlayerView
+        android:id="@+id/video_view_pager_community_detail"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        app:show_timeout="5000"
+        app:resize_mode="fit"
+        app:use_controller="true"
+        android:layout_height="match_parent"
+        android:visibility="gone"></com.kmw.soom2.Views.CustomExoPlayerView>
+</FrameLayout>

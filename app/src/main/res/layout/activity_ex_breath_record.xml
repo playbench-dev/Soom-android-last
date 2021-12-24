@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <TextView
+            android:id="@+id/txt_breath_record_back"
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/back_btn_image"
+            android:gravity="left|center_vertical"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:includeFontPadding="false"
+            android:textColor="#343434"
+            android:textSize="18sp"
+            android:paddingLeft="12dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="280"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:text="폐기능"
+                android:textColor="#343434"
+                android:textSize="16dp"></TextView>
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="17dp"
+                android:src="@drawable/ic_ex"
+                android:layout_marginLeft="6dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:gravity="center_vertical|right">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/trash"
+                android:id="@+id/img_breath_record_remove"
+                android:layout_marginRight="16dp"></ImageView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="측정일시"
+                android:textColor="@color/color343434"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_breath_record_date"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="16dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:text="test"
+                    android:textColor="#000000"
+                    android:background="@drawable/shape_radius_write_bg"
+                    android:textSize="14dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/txt_breath_record_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="16dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"
+                    android:text="test"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/shape_radius_write_bg"
+                    android:textColor="#000000"
+                    android:textSize="14dp"></TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="측정값"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:textColor="@color/color343434"
+                android:textSize="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/shape_radius_write_bg">
+
+                <EditText
+                    android:id="@+id/edt_breath_record_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/black"
+                    android:hint="측정 값을 입력하세요."
+                    android:inputType="number"
+                    android:textColorHint="@color/acacac"
+                    android:maxLength="3"
+                    android:background="@null"/>
+
+                <ImageView
+                    android:id="@+id/img_breath_record_edit_close"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_edit_close"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="측정 시 복약여부"
+                android:textColor="@color/color343434"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:includeFontPadding="false"
+                android:textSize="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/shape_stroke_radio_group_bg"
+                android:padding="0.5dp">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdo_breath_record_unused"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="흡입기 미사용"
+                        android:textColor="@color/color09D182"
+                        android:gravity="center"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="14dp"
+                        android:background="@drawable/shape_stroke_radio_bg"
+                        android:button="@null"/>
+
+                    <RadioButton
+                        android:id="@+id/rdo_breath_record_used"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="흡입기 사용"
+                        android:textColor="@color/color5c5c5c"
+                        android:gravity="center"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:includeFontPadding="false"
+                        android:textSize="14dp"
+                        android:background="@drawable/shape_stroke_radio_bg"
+                        android:backgroundTint="@color/f5f5f5"
+                        android:button="@null"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="정확한 결과를 위해 아침에는 어떠한 약도\n투여하지 않은 상태에서 측정하는 것을 권장합니다."
+                android:textColor="@color/acacac"
+                android:fontFamily="@font/notosanscjkkr_medium_regular"
+                android:textSize="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"/>
+
+            <LinearLayout
+                android:id="@+id/lin_breath_record_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_question_mark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/black"
+                    android:text="@string/question_text"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/e7e7e7"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_breath_record_finish"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/radius_4dp"
+            android:backgroundTint="@color/dbdbdb"
+            android:text="완료"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            style="?android:attr/borderlessButtonStyle"></Button>
+
+    </LinearLayout>
+</LinearLayout>
